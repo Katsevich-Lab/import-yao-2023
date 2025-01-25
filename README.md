@@ -91,7 +91,7 @@ qsub -l m_mem_free=64G 2_process_data.sh
 
 - Ensure all dependencies are installed and accessible in your `$PATH`:
   - `prefetch`, `fastq-dump`, `cellranger`, and `wget`.
-- Sufficient memory (≥64GB) and disk space are required to process the data.
+- Sufficient memory (≥64GB recommended) and disk space are required to process the data.
 
 ---
 
