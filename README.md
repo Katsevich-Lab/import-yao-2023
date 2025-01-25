@@ -37,7 +37,6 @@ tian-2024
 │   │   │   ├── filtered_feature_bc_matrix.h5
 │   │   │   ├── molecule_info.h5
 │   │   │   └── other_files...
-├── README.md
 ```
 
 ---
