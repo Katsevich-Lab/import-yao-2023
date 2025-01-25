@@ -72,7 +72,7 @@ qsub -l m_mem_free=64G 2_process_data.sh
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/<your-repo>/tian-2024.git
+   git clone git@github.com:Katsevich-Lab/import-tian-2024.git
    cd tian-2024
    ```
 
