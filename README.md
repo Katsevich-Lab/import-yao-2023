@@ -56,13 +56,13 @@ You can also run the pipeline in two separate steps:
 
 #### **Step 1: Download Data**
 ```bash
-qsub 1_download_data.sh
+qsub download_data.sh
 ```
 
 #### **Step 2: Process Data**
 After the data has been downloaded, process it with:
 ```bash
-qsub -l m_mem_free=64G 2_process_data.sh
+qsub -l m_mem_free=64G process_data.sh
 ```
 
 ---
