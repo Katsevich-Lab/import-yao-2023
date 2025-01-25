@@ -1,5 +1,3 @@
----
-
 # Tian 2024 Data Repository
 
 This repository contains code and data structure for importing and processing the **Tian 2024 single-cell RNA sequencing data**. The experiments in Tian et al. involve **two similar single-cell RNA sequencing (scRNA-seq) experiments** conducted on **Human PBMC (Peripheral Blood Mononuclear Cells)** from 16 individuals. 
