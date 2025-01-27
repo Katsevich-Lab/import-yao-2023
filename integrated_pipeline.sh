@@ -73,7 +73,8 @@ for SRR_ID in SRR31856734 SRR31856747; do
                    --transcriptome="$REFDATA_DIR" \
                    --fastqs="${RAW_DIR}/${SRR_ID}" \
                    --sample="${SRR_ID}" \
-                   --create-bam=false
+                   --create-bam=true \
+                   --force
 done
 
 echo "All tasks completed successfully!"
