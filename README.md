@@ -50,8 +50,8 @@ qsub -l m_mem_free=64G integrated_pipeline.sh
 
 1. **Clone the repository**:
    ```bash
-   git clone git@github.com:Katsevich-Lab/import-tian-2024.git
-   cd import-tian-2024
+   git clone git@github.com:Katsevich-Lab/import-yao-2023.git
+   cd import-yao-2023
    ```
 
 2. **Set up the environment**:
