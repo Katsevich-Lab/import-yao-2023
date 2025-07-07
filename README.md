@@ -1,10 +1,8 @@
-# Tian 2024 Data Repository
+# Yao 2023 Data Repository
 
-This repository contains code and data structure for importing and processing the **Tian 2024 single-cell RNA sequencing data**. The experiments in Tian et al. involve **two similar single-cell RNA sequencing (scRNA-seq) experiments** conducted on **Human PBMC (Peripheral Blood Mononuclear Cells)** from 16 individuals. 
+This repository contains code and data structure for importing and processing the **Yao 2023 single-cell RNA sequencing data**. The experiments in Yao et al. involve **19 runs** conducted on **THP-1 cell line**. 
 
-Data from the two experiments are labeled as:
-- **SRR31856734** 
-- **SRR31856747**
+Data from the runs are labeled from **SRR22814695** to **SRR22814713**
 
 The pipeline includes downloading raw data, converting to FASTQ files, preprocessing with **Cell Ranger**, and organizing processed data for downstream analysis.
 
@@ -12,17 +10,15 @@ The pipeline includes downloading raw data, converting to FASTQ files, preproces
 
 ## Directory Structure
 
-After running the pipeline, the directory structure under the **`tian-2024`** directory is organized as follows:
+After running the pipeline, the directory structure under the **`yao-2023`** directory is organized as follows:
 
 ```plaintext
-tian-2024
+yao-2023
 ├── raw
-│   ├── SRR31856734
-│   │   ├── SRR31856734_S1_L001_R1_001.fastq
-│   │   └── SRR31856734_S1_L001_R2_001.fastq
-│   ├── SRR31856747
-│   │   ├── SRR31856747_S1_L001_R1_001.fastq
-│   │   └── SRR31856747_S1_L001_R2_001.fastq
+│   ├── SRR22814695
+│   │   └── SRR22814695.sra
+│   ├── SRR22814696
+│   │   └── SRR22814695.sra
 │   └── refdata-gex-GRCh38-2020-A
 ├── processed
 │   ├── SRR31856734
@@ -43,26 +39,9 @@ tian-2024
 
 ## Pipeline Options
 
-You can run the pipeline either in a single step or split into two steps:
-
-### **Option 1: One-Step Execution**
 To run the entire pipeline (downloading and processing) in one step, use:
 ```bash
 qsub -l m_mem_free=64G integrated_pipeline.sh
-```
-
-### **Option 2: Two-Step Execution**
-You can also run the pipeline in two separate steps:
-
-#### **Step 1: Download Data**
-```bash
-qsub download_data.sh
-```
-
-#### **Step 2: Process Data**
-After the data has been downloaded, process it with:
-```bash
-qsub -l m_mem_free=64G process_data.sh
 ```
 
 ---
@@ -78,11 +57,14 @@ qsub -l m_mem_free=64G process_data.sh
 2. **Set up the environment**:
    Ensure `.research_config` contains the following:
    ```bash
-   export LOCAL_TIAN_2024_DATA_DIR="/path/to/tian-2024/"
+   export LOCAL_YAO_2023_DATA_DIR="/path/to/yao-2023/"
    ```
 
 3. **Submit the job**:
-   Use one of the pipeline options above to run the workflow.
+   To run the entire pipeline (downloading and processing) in one step, use:
+```bash
+qsub -l m_mem_free=64G integrated_pipeline.sh
+```
 
 ---
 
@@ -97,7 +79,7 @@ qsub -l m_mem_free=64G process_data.sh
 ## Citation
 
 If using this pipeline or data for your work, please cite:
-- **Tian et al., 2024**: DOI: 10.1038/s41588-024-02019-8
+- **Yao et al., 2023**: DOI: 10.1038/s41587-023-01964-9
 
 ---
 
