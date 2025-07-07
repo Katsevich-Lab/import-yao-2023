@@ -21,13 +21,13 @@ yao-2023
 │   │   └── SRR22814695.sra
 │   └── refdata-gex-GRCh38-2020-A
 ├── processed
-│   ├── SRR22814695
+│   ├── SRR31856734
 │   │   ├── outs
 │   │   │   ├── metrics_summary.csv
 │   │   │   ├── filtered_feature_bc_matrix.h5
 │   │   │   ├── molecule_info.h5
 │   │   │   └── other_files...
-│   ├── SRR22814696
+│   ├── SRR31856747
 │   │   ├── outs
 │   │   │   ├── metrics_summary.csv
 │   │   │   ├── filtered_feature_bc_matrix.h5
