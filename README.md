@@ -1,6 +1,6 @@
 # Yao 2023 Data Repository
 
-This repository contains code and data structure for importing and processing the **Yao 2023 single-cell RNA sequencing data**. The experiments in Yao et al. involve **19 runs** conducted on **THP-1 cell line**. 
+This repository contains code and data structure for importing and processing the **Yao 2023 single-cell RNA sequencing data**. The experiments in Yao et al. involve **19 runs** for conventional CRISPER KO screens conducted on **THP-1 cell line**. 
 
 Data from the runs are labeled from **SRR22814695** to **SRR22814713**
 
